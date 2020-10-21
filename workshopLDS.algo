@@ -1,0 +1,23 @@
+ALGORITHM sum of distincts numbrs arraymethod 
+VAR
+   
+  arr1 : ARRAY_OF Integer[n];
+  arr2 : ARRAY_OF Integer[m];
+  sum  :INTEGER :=0;
+  i,j  :INTEGER :=0
+
+BEGIN
+   
+   for j from 0 to m-1 do
+       for i from 0 to n-1 do
+       if arr1[i]<>arr2[j]
+       sum=sum+arr1[i]
+       else 
+       sum=0;
+       END_if
+     
+
+    
+END
+
+

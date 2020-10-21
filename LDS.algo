@@ -1,0 +1,20 @@
+ALGORITHM sum of same numbrs arraymethod 
+VAR
+    set_declarations
+  arr1 : ARRAY_OF Integer[n];
+  arr2 : ARRAY_OF Integer[m];
+  sum  :INTEGER :=0;
+  i,j  :INTEGER :=0
+
+BEGIN
+    set_instruction
+    WHILE (j<m) DO
+       for i from 0 to n-1 do
+       if arr1[i]=arr2[j]
+       sum=sum+arr1[i]+arr2[j]
+       else break;
+       END_if
+       j=j+1
+    END_WHILE
+END 
+    

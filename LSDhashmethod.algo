@@ -1,0 +1,30 @@
+ALGORITHM sum of same numbrs hashtabmethod 
+VAR
+    set_declarations
+   arr1 : ARRAY_OF integer[n];
+   arr2 : ARRAY_OF integer[m];
+   i,count,sum:integer:=0
+   hashtab: HASH_TABLE<integer,integer>
+BEGIN
+
+    read (arr1)
+     FOR i FROM 0 TO n-1   DO
+       IF (htab.lookup(arr1[i]) = TRUE) THEN
+           count := htab.get(arr1[i]);
+           htab.insert(arr1[i],count+1);
+       ELSE
+           htab.insert(arr1[i],1);
+       END_IF
+   END_FOR
+    
+      FOR i FROM 0 TO m-1   DO
+       IF (htab.lookup(arr2[j]) = true) THEN
+         count := htab.get(arr2[j]);
+           htab.insert(arr2[j],count+1);
+       ELSE
+           htab.insert(arr2[j],1);
+       END_IF
+   END_FOR
+           sum=sum+hashtab[i]+hashtab[j]
+      
+END sum of same numbrs hashtabmethod 
